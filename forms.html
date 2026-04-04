@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale = 1.0>
+        <style>
+            body{
+                background-color: lightblue; 
+                font-family: Arial;
+            }
+            .container{
+                background-color: white; 
+                width: 500px; 
+                height: 800px;
+                border-radius: 2%;
+                padding: 20px;
+                margin: auto;
+
+            }
+            .container h2{
+                color: blue;
+                text-align: center;
+                padding-top: 0%;
+            }
+            label{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            input,textarea,select{
+                width: 80%;
+                padding: 1.5%;
+            
+            }
+    
+            .Gender{
+                width: auto;
+            }
+            .hobbies{
+                width: auto;
+            }
+        </style>
+        <body>
+            <div class="container">
+                <h2>Student Registration Form</h2>
+                <form>
+                    
+                    <label>Full Name:</label><br>
+                    <input type="text" placeholder="Enter Your Name" required><br><br>
+                    
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="Enter Your Email Id"><br><br>
+                    
+                    <label>Password:</label><br>
+                    <input type="password" min="8" max="12"><br><br>
+                    
+                    <label>Age:</label><br>
+                    <input type="number" required min="18" max="35"><br><br>
+
+                    <label>Gender:</label><br>
+                    <input type="radio" value="Male" class="Gender">Male
+                    <input type="radio" value="Female" class="Gender">Female<br><br>
+
+                    <label>Hobbies:</label><br>
+                    <input type="checkbox" value="singing" class="hobbies">Singing
+                    <input type="checkbox" value="playing" class="hobbies">Playing
+                    <input type="checkbox" value="reading" class="hobbies">Reading<br><br>
+
+
+                    <label>Date Of Birth:</label><br>
+                    <input type="date" required><br><br>
+
+                    <label>Course:</label><br>
+                    <select required>
+                        <option>Select Course</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+                        <option>MBA</option>
+                    </select><br><br>
+
+                    <label>Address:</label><br>
+                    <textarea rows="4" placeholder="Enter Your Address" required></textarea>
+
+
+                
+                    
+
+                </form>
+            </div>
+        
+        </body>
+    </head>
+    
+</html>
